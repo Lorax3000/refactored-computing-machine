@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <!-- jQuery (обязательно перед Bootstrap JS) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Bootstrap 3 JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+    <title>Rumpeln</title>
+</head>
+<body>
+    
+
+    
+<header> 
+<div class="banner-container">
+   <img src="mazaiki.jpg" alt="Spooky spooky boo logo" class="banner">
+ <div class="banner-text-container">
+   <h1 class="banner-text">Rumpeln                                                                                                                                  </h1>
+</div>
+
+<nav class="menu">
+  <input type="checkbox" id="toggle-menu" />
+  <label for="toggle-menu" class="button">
+    <!-- три полоски -->
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+
+  <ul class="menu-list">
+    <li><a href="file:///C:/Users/liidi/OneDrive/Desktop/Harjoitukset/H2/index.html">Home</a></li>
+    <li><a href="https://www.google.com/maps/place/Mausoleo+di+Galla+Placidia/@44.4232161,12.1943431,15.21z/data=!4m6!3m5!1s0x477dfbfe2c91d6d9:0xf8cc7a227c27f684!8m2!3d44.4209827!4d12.1971028!16zL20vMDVfMGJm?entry=ttu&g_ep=EgoyMDI1MTAyOS4yIKXMDSoASAFQAw%3D%3D">Location</a></li>
+    <li><a href="#Goods">Goods</a></li>
+    <li><a href="Contact.html">Contact Information</a></li>
+    <li><a href="#Login">Log in</a></li>
+    </ul>
+  
+ 
+</nav>
+                         
+</div>
+</header>
+
+<header>
+    <nav class="main-nav">
+      <a href="#">Home</a>
+      <a href="#">Shop</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+
+
+
+
+<main>
+    
+
+
+
+
+
+
+<section class = "about-us">
+  <div class ="about-us-container">
+    <h2>Welcome to Rumpeln</h2>
+    <p>Rumpel — a place where magic becomes tangible.
+Hidden behind an unassuming door, this boutique whispers secrets of forgotten worlds and ancient powers. 
+<br>Within its shelves lie shimmering artifacts, handcrafted potions, and curious creatures that seem to watch you back. Every item carries a trace of enchantment — a spark of something otherworldly.
+<br>Whether you seek tools for spellcraft, a companion born of myth, or simply a fragment of wonder to keep close, Rumpel invites you to step beyond the ordinary. 
+<br>Let the scent of magic guide you — and discover what waits in the shadows of the extraordinary..</p>
+  </div>
+  </section>
+
+
+
+
+   
+<div class="row-wrapper">
+
+
+<section>
+
+
+<div class="container">
+ 
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+
+      <div class="item active">
+        <img src="catmark2.jpg" alt="Los Angeles" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Los Angeles</h3>
+          <p>LA is always so much fun!</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="catmark3.jpg" alt="Chicago" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Chicago</h3>
+          <p>Thank you, Chicago!</p>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="catmark4.jpg" alt="New York" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>New York</h3>
+          <p>We love the Big Apple!</p>
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+  
+</section>
+
+
+<section class = "goods">
+
+  <div class="goods-container">
+
+  <div class="card">
+    <img src="book.jpg" alt="Book">
+    <p>Book of the Mouse Chorus</p>
+
+
+  <div class="popup" id = "popup-book"> <!-- Внешний контейнер всплывающего окна (popup), обычно затемняет фон и центрирует окно -->
+    <div class="popup-content"> <!-- Основное содержимое всплывающего окна -->
+      <h2>Book of Spells</h2>
+    
+<p class = "price">Price: five gold pieces </p>
+
+    </div>
+  </div>
+  </div>
+  
+ 
+  <div class="card">
+    <img src="crystal ball.jpg" alt="Crystal Ball">
+    <p>Crystal Ball</p>
+
+      
+  <div class ="popup" id = "popup-ball">
+    <div class="popup-content">
+      <h2>Crystal Ball of Whispers</h2>
+
+        <p class = "price">Price: ten gold pieces </p>
+  
+</div>
+  </div>
+  </div>
+
+
+
+  <div class="card">
+    <img src="crystal.jpg" alt="Crystal">
+    <p>Crystal</p>
+
+    
+  <div class="popup" id = "popup-crystal">
+    <div class = "popup-content">
+      <h2>Enchanted Crystal Shard</h2>
+
+        <p class = "price">Price: fifteen gold pieces </p>
+
+    </div>
+  </div>
+  </div>
+  
+  
+  
+  <div class="card">
+    <img src="fairy.jpg" alt="Fairy">
+    <p>Dark Fairy</p>
+  
+  <div class="popup" id = "popup-fairy">
+    <div class="popup-content">
+      <h2>Dark Fairy Dust</h2>
+
+        <p class = "price">Price: twenty gold pieces </p>
+  
+  </div>
+</div>
+  </div>
+
+
+
+  <div class="card">
+    <img src="horns.jpg" alt="Horns">
+    <p>Horns of a mountain satyr</p>
+
+    <div class = "popup" id = "popup-horns">
+      <div class="popup-content">
+        <h2>Horns of a Mountain Satyr</h2>
+
+          <p class = "price">Price: twenty five gold pieces </p>
+
+</div>
+    </div>
+  </div>
+
+
+
+  <div class="card">
+    <img src="potions.jpg" alt="Potions">
+    <p>Potions</p>
+
+    <div class="popup" id = "popup-potions">
+      <div class="popup-content">
+        <h2>Assorted Magical Potions</h2>
+
+          <p class = "price">Price: thirty gold pieces </p>
+  
+  
+  </div>
+  </div>
+</div>
+
+
+ 
+</section>
+
+
+
+</div>
+
+
+
+</main>
+
+
+
+
+
+
+
+    <footer> 
+        <p>© 2025 Rumpeln. All rights reserved.</p>
+    </footer>
+</body>
+</html>

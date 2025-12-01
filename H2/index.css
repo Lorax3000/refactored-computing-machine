@@ -1,0 +1,275 @@
+body {
+  
+ 
+    background-image: url('stone2.jpg'); /* ссылка на текстуру */
+  background-size: cover;       /* масштабируем по размеру карточки */
+  background-repeat: no-repeat; /* не повторять */
+  background-position: center;  /* центрируем изображение */
+}
+
+.banner-container {
+  position: relative;
+  width: 100%;
+  height: 500px; /* 👉 регулируй высоту по вкусу */
+  overflow: hidden;
+}
+
+.banner-text {
+
+   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  font-size: 1.6em;
+  font-family: monospace;
+  text-shadow: 2px 2px 8px rgba(110, 109, 12, 0.7);
+
+}
+
+.banner {
+   width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display: block;
+}
+
+
+/* Контейнер с текстом поверх картинки */
+.banner-text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(0, 0, 0);  /* полупрозрачный чёрный фон */
+  color: white;
+  padding: 100px 100px;
+  border-radius: 100px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgb(255, 255, 255);
+}
+
+
+.main-nav {
+   background-image: url('woodNav.jpeg'); /* ссылка на текстуру */
+  padding: 10px 0;               /* отступы сверху и снизу */
+  text-align: center;            /* выравниваем ссылки по центру */
+}
+
+.main-nav a {
+  color: white;                  /* белый текст */
+  text-decoration: none;         /* убираем подчёркивание */
+  margin: 0 20px;                /* расстояние между ссылками */
+  font-size: 18px;               /* размер шрифта */
+  transition: color 0.3s;        /* плавное изменение цвета при наведении */
+}
+
+.main-nav a:hover {
+  color: #ffcc00;                /* цвет при наведении */
+}
+
+
+
+
+
+.menu {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+
+
+.button { /* вместо .hamburger */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.button span {
+  display: block;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+/* Скрываем чекбокс */
+#toggle-menu {
+  display: none;
+}
+
+/* Список меню */
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  display: none; /* изначально скрыт */
+  position: absolute;
+  right: 0;
+  background-color: rgba(0,0,0,0.8);
+  border-radius: 10px;
+   transition: background-color 0.3s ease, transform 0.3s ease; /* плавность */
+}
+
+/* Стили для ссылок в выпадающем меню */
+.menu-list li a {
+  display: block; /* делаем ссылку блочным элементом, чтобы можно было задавать ширину и паддинги */
+  padding: 10px 20px; /* внутренние отступы вокруг текста ссылки */
+  color: rgb(158, 157, 63);
+    text-shadow: 2px 2px 8px rgba(110, 109, 12, 0.7);
+    font-family:cursive;
+  text-decoration: none; /* убираем подчеркивание ссылки */
+  
+  /* Плавный переход для изменений фона и масштаба при наведении */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Эффект при наведении мыши на ссылку */
+.menu-list li a:hover {
+  background-color: rgba(255, 255, 255, 0.2); 
+  /* Полупрозрачный светлый фон появляется только при наведении, чтобы выделить ссылку */
+  
+  transform: scale(1.05); 
+  /* Лёгкое увеличение ссылки (масштабирование) для визуальной интерактивности */
+}
+
+
+
+/* Показываем меню при клике на гамбургер */
+#toggle-menu:checked + .button + .menu-list {
+  display: block;          /* раскрываем список ссылок */
+}
+
+
+
+.about-us {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-family: cursive;
+  margin: 50px;
+  background-color: black;
+  background-image: url('bodypaper.jpg'); /* ссылка на текстуру */
+}
+
+
+
+
+.goods-container {
+  display: flex;          /* Используем flexbox для размещения элементов внутри контейнера */
+  flex-wrap: wrap;        /* Разрешаем элементам переноситься на новую строку, если не хватает места */
+  gap: 20px;              /* Устанавливаем расстояние (отступ) между элементами внутри контейнера */
+  justify-content:center ; /* выравнивание по левому краю */
+  margin: 50px;          /* Добавляем внешние отступы (со всех сторон по 300px) вокруг контейнера */
+}
+
+
+.card {
+  position: relative;
+  width: 200px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+   /* вместо background-color используем фон */
+  background-image: url('bodypaper.jpg'); /* ссылка на текстуру */
+  background-size: cover;       /* масштабируем по размеру карточки */
+  background-repeat: no-repeat; /* не повторять */
+  background-position: center;  /* центрируем изображение */
+  
+}
+
+.card img {
+  width: 100%;
+  border-radius: 3px;
+}
+
+.card p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+/* Лёгкое увеличение при наведении */
+.card:hover {
+  transform: scale(1.05);
+}
+
+
+/* всплывающий блок */
+.popup {
+  display: flex; /* изначально скрыт */
+  position: absolute;
+  bottom: 110%; /* всплывает над карточкой */
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  width: 180px;
+  font-size: 14px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  z-index: 10;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 0; /* добавим плавное появление */
+  pointer-events: none;
+}
+
+/* показываем при наведении */
+.card:hover .popup {
+  display: block;
+  opacity: 1;
+  transform: translateX(-50%) translateY(-10px);
+  pointer-events: auto;
+}
+
+
+.card p {
+  margin-top: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  font-family:cursive;
+}
+
+
+p.price {
+
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(175, 172, 0);
+  
+}
+
+
+.row-wrapper {
+  display: flex;
+  align-items: flex-start; /* выравнивание по верхнему краю */
+  gap: 20px;
+}
+
+#myCarousel .item img {
+  width: 100%;        /* подстраивает ширину под блок #myCarousel */
+  height: 250px;      /* фиксированная высота */
+  object-fit: cover;  /* кадрирование, без искажения */
+}
+
+#myCarousel {
+  width: 400px;       /* ширина блока карусели */
+  margin-left: 20px;  /* отступ от соседнего контента */
+}
+
+footer {
+    background-color: rgba(109, 89, 36, 0.678);
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: rgb(158, 157, 63);
+    text-shadow: 2px 2px 8px rgba(110, 109, 12, 0.7);
+}
+
+footer { clear: both; }
+
+

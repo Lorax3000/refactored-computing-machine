@@ -1,0 +1,146 @@
+
+body {
+    background-color: #000000;
+}
+
+
+header {
+
+    text-align: center;
+    padding: 20px;
+    background-color: #431e66;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.7);
+    font-family:cursive;
+
+
+}
+
+/* Отступы для main */
+main {
+    padding: 40px 20px;
+}
+
+/* Секция с текстом */
+.Info-text {
+    background-color: #ffffff; /* черный фон для секции */
+    padding: 30px;
+    border-radius: 10px; /* скругленные углы */
+    max-width: 600px; /* ограничение ширины */
+    margin: 0 auto; /* центрирование */
+    box-shadow: 0 30px 30px #431e66 ; /* легкая тень */
+
+}
+
+/* Заголовок секции */
+.Info-text h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Параграф */
+.Info-text p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-family:cursive;
+}
+
+/* Список контактов */
+.Info-text ul {
+    list-style-type: none; /* убираем стандартные маркеры */
+    padding: 0;
+    font-family:cursive;
+}
+
+.Info-text ul li {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+
+
+
+.menu {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+
+
+.button { /* вместо .hamburger */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.button span {
+  display: block;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+/* Скрываем чекбокс */
+#toggle-menu {
+  display: none;
+}
+
+/* Список меню */
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  display: none; /* изначально скрыт */
+  position: absolute;
+  right: 0;
+  background-color: rgba(0,0,0,0.8);
+  border-radius: 10px;
+   transition: background-color 0.3s ease, transform 0.3s ease; /* плавность */
+}
+
+/* Стили для ссылок в выпадающем меню */
+.menu-list li a {
+  display: block; /* делаем ссылку блочным элементом, чтобы можно было задавать ширину и паддинги */
+  padding: 10px 20px; /* внутренние отступы вокруг текста ссылки */
+  color: rgb(158, 157, 63);
+    text-shadow: 2px 2px 8px rgba(110, 109, 12, 0.7);
+    font-family:cursive;
+  text-decoration: none; /* убираем подчеркивание ссылки */
+  
+  /* Плавный переход для изменений фона и масштаба при наведении */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Эффект при наведении мыши на ссылку */
+.menu-list li a:hover {
+  background-color: rgba(255, 255, 255, 0.2); 
+  /* Полупрозрачный светлый фон появляется только при наведении, чтобы выделить ссылку */
+  
+  transform: scale(1.05); 
+  /* Лёгкое увеличение ссылки (масштабирование) для визуальной интерактивности */
+}
+
+
+
+/* Показываем меню при клике на гамбургер */
+#toggle-menu:checked + .button + .menu-list {
+  display: block;          /* раскрываем список ссылок */
+}
+
+
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #431e66;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.7);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-family:cursive;
+}
